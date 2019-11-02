@@ -1,3 +1,4 @@
+
 class Pokemon
   
   attr_accessor :id, :name, :type, :db
@@ -18,7 +19,7 @@ class Pokemon
     # return a new pokemon object
     
   found_pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?;", id)
-   return pokemon[0]
+  binding.pry
 end
   
 end
