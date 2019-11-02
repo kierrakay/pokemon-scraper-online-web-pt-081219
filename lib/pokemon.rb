@@ -1,7 +1,7 @@
 class Pokemon
   
   def initialize(pokemon)
-    @id = 
+    @id = pokemon [id]
     
   end 
   
