@@ -17,7 +17,7 @@ class Pokemon
     # find pokemon by id
     # return a new pokemon object
     
-  db.execute("SELECT * FROM pokemon WHERE id = ?", id)
+  db.execute("SELECT * FROM pokemon WHERE id = ?;", id)
    return pokemon[0]
 end
   
