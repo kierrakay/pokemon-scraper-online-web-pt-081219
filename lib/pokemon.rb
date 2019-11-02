@@ -17,7 +17,7 @@ class Pokemon
   def self.find(id, db)
     # find pokemon by id
     # return a new pokemon object
-    #.flatten is the same as putting .first
+    #.flatten is the same as putting .first tro get array out of nested array
     
   found_pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?;", id).flatten
   binding.pry
