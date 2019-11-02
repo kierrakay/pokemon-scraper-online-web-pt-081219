@@ -20,7 +20,7 @@ class Pokemon
     #.flatten is the same as putting .first tro get array out of nested array
     
   found_pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?;", id).flatten
-  Pokemon.new(id: found_pokemon[0], name:[1], type:, db: db)
+  Pokemon.new(id: found_pokemon[0], name: found_pokemon[1], type: found_pokemon[2], db: db)
 
 end
   
