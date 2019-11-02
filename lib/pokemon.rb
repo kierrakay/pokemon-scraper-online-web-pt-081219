@@ -17,6 +17,7 @@ class Pokemon
   def self.find(id, db)
     # find pokemon by id
     # return a new pokemon object
+    #.flatten is the same as putting .first
     
   found_pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?;", id).flatten
   binding.pry
