@@ -4,6 +4,7 @@ class Pokemon
     @id = pokemon [id]
     @name = pokemon [name]
     @type = pokemon [type]
+    @db = pokemon[db]
     
   end 
   
